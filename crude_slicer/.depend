@@ -1,0 +1,36 @@
+Crude_slicer.cmi :
+Crude_slicer.cmi :
+analyze.cmo : options.cmo info.cmo common.cmo
+analyze.cmx : options.cmx info.cmx common.cmx
+bv.cmo : bv.cmi
+bv.cmx : bv.cmi
+bv.cmi :
+common.cmo : options.cmo
+common.cmx : options.cmx
+data.cmo : flag.cmi common.cmo bv.cmi
+data.cmx : flag.cmx common.cmx bv.cmx
+fixpoint.cmo : options.cmo flag.cmi common.cmo
+fixpoint.cmx : options.cmx flag.cmx common.cmx
+flag.cmo : flag.cmi
+flag.cmx : flag.cmi
+flag.cmi :
+function_pointers.cmo : region.cmo options.cmo fixpoint.cmo common.cmo \
+    analyze.cmo
+function_pointers.cmx : region.cmx options.cmx fixpoint.cmx common.cmx \
+    analyze.cmx
+info.cmo : flag.cmi data.cmo common.cmo
+info.cmx : flag.cmx data.cmx common.cmx
+options.cmo :
+options.cmx :
+region.cmo : info.cmo flag.cmi fixpoint.cmo common.cmo analyze.cmo
+region.cmx : info.cmx flag.cmx fixpoint.cmx common.cmx analyze.cmx
+register.cmo : slice.cmo options.cmo
+register.cmx : slice.cmx options.cmx
+slice.cmo : transform.cmo summaries.cmo region.cmo options.cmo info.cmo \
+    function_pointers.cmo flag.cmi fixpoint.cmo common.cmo analyze.cmo
+slice.cmx : transform.cmx summaries.cmx region.cmx options.cmx info.cmx \
+    function_pointers.cmx flag.cmx fixpoint.cmx common.cmx analyze.cmx
+summaries.cmo : region.cmo options.cmo common.cmo
+summaries.cmx : region.cmx options.cmx common.cmx
+transform.cmo : region.cmo options.cmo common.cmo
+transform.cmx : region.cmx options.cmx common.cmx

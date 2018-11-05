@@ -1,0 +1,18 @@
+opam-version: "2.0"
+synopsis:
+  "Prototype slicer for preprocessing reachability verification tasks"
+maintainer: "Mikhail Mandrykin <mandrykin@ispras.ru>"
+authors: "Mikhail Mandrykin <mandrykin@ispras.ru>"
+license: "Apache License, Version 2.0"
+homepage: "https://forge.ispras.ru/projects/crude_slicer"
+bug-reports: "https://forge.ispras.ru/projects/crude_slicer/issues"
+depends: [
+  "ocaml"
+  "frama-c" {>= "astraver.20180501"}
+]
+build: make
+install: [make "install"]
+dev-repo: "git+https://forge.ispras.ru/git/crude_slicer.git"
+url {
+  src: "git+https://forge.ispras.ru/git/crude_slicer.git#master"
+}

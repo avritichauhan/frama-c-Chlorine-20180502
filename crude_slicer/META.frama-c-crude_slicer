@@ -1,0 +1,8 @@
+description = "Frama-C Crude_slicer plug-in"
+version = "Chlorine-20180501"
+requires = " "
+archive(byte) = "top/Crude_slicer.cmo"
+archive(native) = "top/Crude_slicer.cmx"
+plugin(native) = "top/Crude_slicer.cmxs"
+plugin(byte) = "top/Crude_slicer.cmo"
+directory = ""
