@@ -4,6 +4,7 @@
    The following changes are done in the downloaded package:
 	- Added crude_slicer package from the link : https://forge.ispras.ru/projects/crude_slicer/repository 
 	- Renamed "crude_slicer.~dev" folder, to "crude_slicer"
+	- Renamed README.md to README_frama-c.md
 	- Removed the following directories:
 		- frama-c-Chlorine-20180502/tests 
 		- frama-c-Chlorine-20180502/crude_slicer/tests
